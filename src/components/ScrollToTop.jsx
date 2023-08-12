@@ -11,7 +11,7 @@ export default function ScrollToTop() {
   });
   return (
     <ToTop onClick={toTop} scrollState={scrollState}>
-      <img src={logo} alt="connectio failed " />
+      <img src={logo} alt="connectionn failed " />
     </ToTop>
   );
 }

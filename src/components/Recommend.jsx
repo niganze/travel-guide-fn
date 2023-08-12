@@ -64,12 +64,16 @@ export default function Recommend() {
 
   const packages = [
     "The Weekend Break",
+    "The Weekend Break",
     "The Package Holiday",
     "The Group Tour",
+    "Long Term Slow Travel",
     "Long Term Slow Travel",
   ];
 
   const [active, setActive] = useState(1);
+  const filteredDestinations =
+    active > 0 ? data.filter((_, index) => index < active) : [];
   return (
     <Section id="recommend">
       <div className="title">
@@ -91,25 +95,24 @@ export default function Recommend() {
         </ul>
       </div>
       <div className="destinations">
-        {data.map((destination, index) => {
+         {filteredDestinations.map((destination, index) => {
+        // {data.map((destination, index) => {
           return (
-            <div className="destination" key={index} >
+            <div className="destination" key={index}>
               <img src={destination.image} alt="" />
               <h3>{destination.title}</h3>
-              <p>{destination.subTitle}</p>
+              <p>{destination.subTitle.slice(0, 100)}</p>
               <div className="info">
                 <div className="services">
                   <img src={info1} alt="connection failed" />
                   <img src={info2} alt="connection failed " />
                   <img src={info3} alt=" connection failed" />
                 </div>
-                    <button>ReadMore</button>
-                {/* <h4>{destination.cost}</h4> */}
+                <button>ReadMore</button>
               </div>
               <div className="distance">
                 <span>1000 Kms from kigali</span>
                 <span>{destination.duration}</span>
-               
               </div>
             </div>
           );

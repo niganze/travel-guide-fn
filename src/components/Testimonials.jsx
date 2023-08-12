@@ -43,8 +43,8 @@ export default function Testimonials() {
           <div className="info">
             <img src={avatarImage} alt="" />
             <div className="details">
-              <h4>urgerr</h4>
-              <span>CEO </span>
+              <h4></h4>
+              <span>CEO - Shashaan Web Solutions</span>
             </div>
           </div>
         </div>
