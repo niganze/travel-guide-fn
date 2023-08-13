@@ -1,5 +1,5 @@
 import  { useEffect } from "react";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Homesite from "./components/Homesite";
 import Navbar from "./components/Navbar";
 import Recommend from "./components/Recommend";
@@ -40,7 +40,7 @@ export default function App() {
       <Gallery/>
       <Recommend />
       <Testimonials />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

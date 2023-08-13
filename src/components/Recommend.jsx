@@ -64,11 +64,11 @@ export default function Recommend() {
 
   const packages = [
     "The Weekend Break",
-    "The Weekend Break",
-    "The Package Holiday",
-    "The Group Tour",
-    "Long Term Slow Travel",
-    "Long Term Slow Travel",
+    "The christianity Break",
+    "The  Forestly  Holiday tour",
+    "The  Group Tour",
+    "Cultural places  Travel",
+    "Long Term parks Travel",
   ];
 
   const [active, setActive] = useState(1);
@@ -137,8 +137,9 @@ const Section = styled.section`
       list-style-type: none;
       width: max-content;
       li {
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
         border-bottom: 0.1rem solid black;
+        // color:red;
       }
       .active {
         border-bottom: 0.5rem solid #8338ec;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Video from "../assets/video.mp4";
+import { FaFacebook, FaYoutube, FaWhatsapp, FaInstagram } from "react-icons/fa";
 export default function Hero() {
   return (
     <Section id="hero">
@@ -14,7 +15,22 @@ export default function Hero() {
             diverse wildlife, and welcoming locals beckon travelers to an
             unforgettable adventure!
           </p>
+          <div className="social-icons">
+            <a href="#">
+              <FaFacebook />
+            </a>
+            <a href="#">
+              <FaYoutube />
+            </a>
+            <a href="#">
+              <FaWhatsapp />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+          </div>
         </div>
+
         <div className="search">
           <div className="container">
             <label htmlFor="">Where you want to go</label>
@@ -48,6 +64,26 @@ const Section = styled.section`
       filter: brightness(90%);
       border-radius: 0.1rem;
     }
+  }
+  /* Add this CSS style for vertical arrangement */
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+
+    a {
+      font-size: 1.5rem;
+      color: #ffffff;
+      transition: color 0.3s ease-in-out;
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: #ffcc00; /* Change the color on hover */
+      }
+    }
+  }
+  .title {
   }
   .content {
     height: 100%;
@@ -125,9 +161,9 @@ const Section = styled.section`
   @media screen and (min-width: 280px) and (max-width: 980px) {
     height: 25rem;
     .background {
-        background-color: palegreen;
+      background-color: palegreen;
       video {
-        height:90%;
+        height: 90%;
       }
     }
     .content {

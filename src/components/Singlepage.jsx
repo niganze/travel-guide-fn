@@ -1,5 +1,3 @@
-
-
 const Singlepage = () => {
   return (
     <div>
