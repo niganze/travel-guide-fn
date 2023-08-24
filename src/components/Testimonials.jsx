@@ -1,6 +1,7 @@
 // import React from "react";
 import styled from "styled-components";
-import avatarImage from "../assets/avatarImage.jpg";
+// import avatarImage from "../assets/test.jpg";
+// import avatarImage2 from "../assets/test.jpg";
 export default function Testimonials() {
   return (
     <Section id="testimonials">
@@ -14,10 +15,10 @@ export default function Testimonials() {
             service is top-notch and truly exceeded my expectations.
           </p>
           <div className="info">
-            <img src={avatarImage} alt="" />
+            {/* <img src={avatarImage} alt="" /> */}
             <div className="details">
-              <h4>Kishan Sheth</h4>
-              <span>any one in our group </span>
+              <h4>ALAIN</h4>
+              <span>Web designer and </span>
             </div>
           </div>
         </div>
@@ -27,10 +28,10 @@ export default function Testimonials() {
             attentive to my needs
           </p>
           <div className="info">
-            <img src={avatarImage} alt="" />
+            {/* <img src={avatarImage2} alt="" /> */}
             <div className="details">
-              <h4>Kishan Sheth</h4>
-              <span>eric </span>
+              <h4>ERIC</h4>
+              <span> Web backend AIP developer </span>
             </div>
           </div>
         </div>
@@ -41,10 +42,10 @@ export default function Testimonials() {
             anyone seeking a reliable and efficient solution
           </p>
           <div className="info">
-            <img src={avatarImage} alt="" />
+            {/* <img src={avatarImage2} alt="connection failed" /> */}
             <div className="details">
-              <h4></h4>
-              <span>CEO - Shashaan Web Solutions</span>
+              <h4>ERIC</h4>
+              <span>AIP - backend_Web developer Solutions</span>
             </div>
           </div>
         </div>
