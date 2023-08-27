@@ -9,7 +9,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
 import Gallery from "./components/Gallery";
-import SignUp from "./components/signUP";
+// import SignUp from "./components/signUP";
 export default function App() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -46,7 +46,7 @@ export default function App() {
       <Testimonials />
 
       <Footer /> 
-      <SignUp/>
+      {/* <SignUp/> */}
     </div>
   );
 }
