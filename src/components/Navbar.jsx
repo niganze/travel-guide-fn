@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="brand">
           <div className="container">
             <img src={logo} alt="" />
-            Tech_travel
+            HAMENYE_travel
           </div>
           <div className="toggle">
             {navbarState ? (
@@ -34,6 +34,9 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#recommend">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact">Contact us</a>
           </li>
           <li>
             <a href="#contact">Contact us</a>

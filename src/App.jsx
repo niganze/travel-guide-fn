@@ -3,11 +3,13 @@ import Footer from "./components/Footer";
 import Homesite from "./components/Homesite";
 import Navbar from "./components/Navbar";
 import Recommend from "./components/Recommend";
+// import AdminDashBoard from "./components/dashboard";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
 import Gallery from "./components/Gallery";
+import SignUp from "./components/signUP";
 export default function App() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -33,14 +35,18 @@ export default function App() {
   }, []);
   return (
     <div>
-      <ScrollToTop />
+      {/* <AdminDashBoard /> */}
+
+     <ScrollToTop />
       <Navbar />
       <Homesite />
       <Services />
       <Gallery/>
       <Recommend />
       <Testimonials />
-      <Footer />
+
+      <Footer /> 
+      <SignUp/>
     </div>
   );
 }

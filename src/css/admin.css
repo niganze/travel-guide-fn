@@ -1,0 +1,63 @@
+body{
+    background: #f9fafb;
+}
+.dashContainer{
+    height: 100vh;
+}
+.dashContainer{
+    display: flex;
+    justify-items: center;
+}
+.dashNav{
+    width: 20%;
+}
+.dashDisplay{
+    width: 80%;
+}
+.avatarUser{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #eceff1;
+    border-radius: 10px;
+    padding: 10px;
+}
+.avatarUser img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+}
+.avatarUser p{
+    font-weight: bold;
+}
+
+.linkContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.linkContainer.first{
+    background: #eceff1;
+    border-radius: 10px;
+
+
+}
+.dashNavLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dashNav{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+}
+.activeDashLink{
+    background: #eceff1;
+    border-radius: 10px;
+
+}
