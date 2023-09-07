@@ -38,14 +38,12 @@ export default function Navbar() {
           <li>
             <a href="#contact">Contact us</a>
           </li>
-          <li>
-            <a href="#contact">Contact us</a>
-          </li>
+         
           <li>
             <a href="#testimonials">Testimonials</a>
           </li>
         </ul>
-        <button>Connect</button>
+        <a href="./signUP.jsx"><button>Connect</button></a>
       </Nav>
       <ResponsiveNav state={navbarState}>
         <ul>

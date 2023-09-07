@@ -5,6 +5,7 @@ import {AiOutlinePlus} from 'react-icons/ai'
 import {AiOutlineUsergroupDelete} from 'react-icons/ai'
 import {VscFeedback} from 'react-icons/vsc'
 import { useState } from 'react'
+import Getting from './getting'
 const AdminDashBoard = () => {
     const [activeLink, setActiveLink] = useState('dashboard');
 
@@ -16,7 +17,7 @@ const AdminDashBoard = () => {
       if (activeLink === 'dashboard') {
         displayComponent = "dashboard";
       } else if (activeLink === 'create') {
-        displayComponent = "create";
+        displayComponent = <Getting/>;
       }
        else if (activeLink === 'users') {
         displayComponent = "users";

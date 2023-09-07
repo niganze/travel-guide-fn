@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import scrollreveal from "scrollreveal";
 import Gallery from "./components/Gallery";
+// import AdminDashBoard from "./components/dashboard";
 // import SignUp from "./components/signUP";
 export default function App() {
   useEffect(() => {
@@ -44,7 +45,6 @@ export default function App() {
       <Gallery/>
       <Recommend />
       <Testimonials />
-
       <Footer /> 
       {/* <SignUp/> */}
     </div>
